@@ -4,7 +4,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Plugin 'morhetz/gruvbox'
+Bundle 'morhetz/gruvbox'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-surround'
@@ -17,8 +17,6 @@ filetype plugin indent on
 set t_Co=256
 set bg=dark
 inoremap jk <esc> 
-" set color scheme
-colorscheme gruvbox
 let g:gruvbox_termcolors=256
 let g:gruvbox_contrast_dark='hard'
 " set line numbers
@@ -52,3 +50,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+call vundle#end()
+
+" set color scheme
+colorscheme gruvbox
+
