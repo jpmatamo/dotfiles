@@ -1,1 +1,0 @@
-/Users/jpmatamo/.vimrc
