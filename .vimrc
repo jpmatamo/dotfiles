@@ -25,6 +25,8 @@ let g:gruvbox_contrast_dark='hard'
 set nu
 " set syntax on
 syntax on
+" set ruler
+set ruler
 " use indentation of previous line
 set autoindent
 " use intelligent indentation for C
