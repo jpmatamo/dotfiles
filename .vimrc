@@ -17,6 +17,7 @@ filetype plugin indent on
 set t_Co=256
 set bg=dark
 inoremap jk <esc> 
+:nnoremap <space> za
 let g:gruvbox_termcolors=256
 let g:gruvbox_contrast_dark='hard'
 " set line numbers
