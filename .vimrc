@@ -11,17 +11,21 @@ Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Valloric/ListToggle'
 Plugin 'wincent/command-t'
+Plugin 'christoomey/vim-tmux-navigator' 
 
 filetype plugin indent on 
 set t_Co=256
 set bg=dark
 inoremap jk <esc> 
+:nnoremap <space> za
 let g:gruvbox_termcolors=256
 let g:gruvbox_contrast_dark='hard'
 " set line numbers
 set nu
 " set syntax on
 syntax on
+" set ruler
+set ruler
 " use indentation of previous line
 set autoindent
 " use intelligent indentation for C
@@ -44,6 +48,13 @@ set pastetoggle=<F2>
 set ttyfast
 set mouse=a
 set ttymouse=xterm2
+
+" Easier split navigations
+" https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally#easier-split-navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
